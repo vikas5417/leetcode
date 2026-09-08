@@ -3,7 +3,7 @@ class Solution:
         for i in range(len(nums2)):
             nums1.append(nums2[i])
         nums1=sorted(nums1)
-        index=len(nums1)/2
+        index=len(nums1)//2
         if len(nums1)%2==0:
-            return (nums1[int(index)]+nums1[int(index)-1])/2
-        return nums1[int(index)]
+            return (nums1[index]+nums1[index-1])/2
+        return nums1[index]
